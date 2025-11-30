@@ -11,8 +11,8 @@
   DTS:LocaleID="10250"
   DTS:ObjectName="PackageVideoJuegos"
   DTS:PackageType="5"
-  DTS:VersionBuild="117"
-  DTS:VersionGUID="{D3179A29-96EA-4CC8-B5FD-0D9304E46B1A}">
+  DTS:VersionBuild="127"
+  DTS:VersionGUID="{320E4AAC-1864-4855-A54E-18D11FF65EC2}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC4Y6DOEGxEudXUcxRXQ03wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAA3JdBUjy+cg9RpqoSvlDw5HEa1Quq4ic32yekA1M9crQAAAAAOgAAAAAIAACAAAAAgNT7lOv3JRvAJhIGoOqKP6IcXyjB6eu+O5iDYhj0MISAAAACAg8no5b+2WRsT1hz3uv3conD/6uZ4FZ6drdN5HFS33EAAAADvf5xgCMWSAwT3VEibfiYsaSIWfFWu1Ls3LoFscsHlFhkqETZ5IsU1IgCKElk6dyGKXZAtFPtW7qLSyuZseroM</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAC4Y6DOEGxEudXUcxRXQ03wAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADxvKI1docya1fZ3Vy4qBmUgD1racdUYF4vOmqzDcNEyAAAAAAOgAAAAAIAACAAAABz7rPVJxSAsXtjHoGfftgXeZCpaL9VzjrCT+6TqvcNiiAAAAD0/bXi+PqsiRdnhIBNw/kSaYDvebbkHFtTKt2+kZ+CckAAAAAtJU+QK7rq89lYF3sM2eI5JiStVSEznKP978WzBvQrasFMi7Y6FaJpe0L7adYw037V1r6iLd0guThpj+Lq1qIs</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -204,7 +204,7 @@
       DTS:Namespace="User"
       DTS:ObjectName="Clave">
       <DTS:VariableValue
-        DTS:DataType="8">PONTUPASSWORD</DTS:VariableValue>
+        DTS:DataType="8">BANKpower9719</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
@@ -767,13 +767,13 @@
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[CostosGenero]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[STG_CostosGenero]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[CostosGenero]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[STG_CostosGenero]) [refTable]
 where [refTable].[Genero] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -909,13 +909,13 @@ where [refTable].[Genero] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Demografia]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[STG_Demografia]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Demografia]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[STG_Demografia]) [refTable]
 where [refTable].[Segmento] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -947,7 +947,7 @@ where [refTable].[Segmento] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdDemografia" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Segmento" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Edad" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PreferenciaGeneroJuego" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HorasJuegoSemana" dataType="DT_NUMERIC" length="0" precision="5" scale="2" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="IdDemografia" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Segmento" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Edad" dataType="DT_WSTR" length="20" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PreferenciaGeneroJuego" dataType="DT_WSTR" length="100" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HorasJuegoSemana" dataType="DT_NUMERIC" length="0" precision="5" scale="2" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
@@ -1051,13 +1051,13 @@ where [refTable].[Segmento] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[Editoriales]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[STG_Editoriales]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[Editoriales]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[STG_Editoriales]) [refTable]
 where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -1195,7 +1195,7 @@ where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[CostosGenero]</property>
+                  name="OpenRowset">[dbo].[STG_CostosGenero]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1348,7 +1348,7 @@ where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Demografia]</property>
+                  name="OpenRowset">[dbo].[STG_Demografia]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -1503,7 +1503,7 @@ where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Editoriales]</property>
+                  name="OpenRowset">[dbo].[STG_Editoriales]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2061,7 +2061,7 @@ where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[PlataformasUsuarios]</property>
+                  name="OpenRowset">[dbo].[STG_PlataformasUsuarios]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2228,7 +2228,7 @@ where [refTable].[Editorial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[TendenciasGeneros]</property>
+                  name="OpenRowset">[dbo].[STG_TendenciasGeneros]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -2716,13 +2716,13 @@ where [refTable].[Editorial] = ?</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[VentaVideojuegos]</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from [dbo].[STG_VentaVideojuegos]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[VentaVideojuegos]) [refTable]
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from [dbo].[STG_VentaVideojuegos]) [refTable]
 where [refTable].[IdSerial] = ?</property>
                 <property
                   dataType="System.Int32"
@@ -2860,7 +2860,7 @@ where [refTable].[IdSerial] = ?</property>
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[VentaVideojuegos]</property>
+                  name="OpenRowset">[dbo].[STG_VentaVideojuegos]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -3119,13 +3119,13 @@ where [refTable].[IdSerial] = ?</property>
           Id="Package\Data Flow Task Extras"
           TopLeft="381.111090288119,70.4888883987179" />
         <NodeLayout
-          Size="185.6,41.6"
-          Id="Package\Data Flow Task Ventas"
-          TopLeft="116.666660292281,70.7777772855978" />
-        <NodeLayout
           Size="265.6,41.6"
           Id="Package\Data Flow Task Tendencias Plataformas"
           TopLeft="680.833296134242,76.2666661363179" />
+        <NodeLayout
+          Size="185.6,41.6"
+          Id="Package\Data Flow Task Ventas"
+          TopLeft="116.666660292281,70.7777772855978" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -3377,17 +3377,17 @@ where [refTable].[IdSerial] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Demografia]</Value>
+          type="q3:string">[dbo].[STG_Demografia]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3426,17 +3426,17 @@ where [refTable].[IdSerial] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[CostosGenero]</Value>
+          type="q3:string">[dbo].[STG_CostosGenero]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3462,17 +3462,17 @@ where [refTable].[IdSerial] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[Editoriales]</Value>
+          type="q3:string">[dbo].[STG_Editoriales]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3507,6 +3507,124 @@ where [refTable].[IdSerial] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task Extras\Excel Source Editoriales">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Data Flow Task Tendencias Plataformas">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="202.4,41.6"
+          Id="Package\Data Flow Task Tendencias Plataformas\Flat File Source Tendencia"
+          TopLeft="670.333323344589,81.9999987781048" />
+        <NodeLayout
+          Size="229.6,41.6"
+          Id="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Plataformas"
+          TopLeft="367.999994516373,257.9999961555" />
+        <NodeLayout
+          Size="209.6,41.6"
+          Id="Package\Data Flow Task Tendencias Plataformas\Flat File Source Plataformas"
+          TopLeft="411.999993860722,85.9999987185002" />
+        <NodeLayout
+          Size="222.4,41.6"
+          Id="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Tendencia"
+          TopLeft="647.333323687315,240.99999640882" />
+        <EdgeLayout
+          Id="Package\Data Flow Task Tendencias Plataformas.Paths[Flat File Source Output1]"
+          TopLeft="771.533323344589,123.599998778105">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-12.9999996572732,117.399997630715"
+              Start="0,0"
+              End="-12.9999996572732,109.899997630715">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,54.6999988153577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,54.6999988153577"
+                    Point2="0,58.6999988153577"
+                    Point3="-4,58.6999988153577" />
+                  <mssgle:LineSegment
+                    End="-8.99999965727318,58.6999988153577" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-8.99999965727318,58.6999988153577"
+                    Point2="-12.9999996572732,58.6999988153577"
+                    Point3="-12.9999996572732,62.6999988153577" />
+                  <mssgle:LineSegment
+                    End="-12.9999996572732,109.899997630715" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task Tendencias Plataformas.Paths[Flat File Source Output]"
+          TopLeft="516.799993860722,127.5999987185">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-33.999999344349,130.399997437"
+              Start="0,0"
+              End="-33.999999344349,122.899997437">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,61.1999987185002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,61.1999987185002"
+                    Point2="0,65.1999987185002"
+                    Point3="-4,65.1999987185002" />
+                  <mssgle:LineSegment
+                    End="-29.999999344349,65.1999987185002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-29.999999344349,65.1999987185002"
+                    Point2="-33.999999344349,65.1999987185002"
+                    Point3="-33.999999344349,69.1999987185002" />
+                  <mssgle:LineSegment
+                    End="-33.999999344349,122.899997437" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Plataformas">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Tendencia">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3614,17 +3732,17 @@ where [refTable].[IdSerial] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string">[dbo].[VentaVideojuegos]</Value>
+          type="q3:string">[dbo].[STG_VentaVideojuegos]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -3646,124 +3764,6 @@ where [refTable].[IdSerial] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task Ventas\OLE DB Destination VentaVideojuegos">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Data Flow Task Tendencias Plataformas">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="209.6,41.6"
-          Id="Package\Data Flow Task Tendencias Plataformas\Flat File Source Plataformas"
-          TopLeft="411.999993860722,85.9999987185002" />
-        <NodeLayout
-          Size="229.6,41.6"
-          Id="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Plataformas"
-          TopLeft="367.999994516373,257.9999961555" />
-        <EdgeLayout
-          Id="Package\Data Flow Task Tendencias Plataformas.Paths[Flat File Source Output]"
-          TopLeft="516.799993860722,127.5999987185">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-33.999999344349,130.399997437"
-              Start="0,0"
-              End="-33.999999344349,122.899997437">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,61.1999987185002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,61.1999987185002"
-                    Point2="0,65.1999987185002"
-                    Point3="-4,65.1999987185002" />
-                  <mssgle:LineSegment
-                    End="-29.999999344349,65.1999987185002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-29.999999344349,65.1999987185002"
-                    Point2="-33.999999344349,65.1999987185002"
-                    Point3="-33.999999344349,69.1999987185002" />
-                  <mssgle:LineSegment
-                    End="-33.999999344349,122.899997437" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="202.4,41.6"
-          Id="Package\Data Flow Task Tendencias Plataformas\Flat File Source Tendencia"
-          TopLeft="670.333323344589,81.9999987781048" />
-        <NodeLayout
-          Size="222.4,41.6"
-          Id="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Tendencia"
-          TopLeft="647.333323687315,240.99999640882" />
-        <EdgeLayout
-          Id="Package\Data Flow Task Tendencias Plataformas.Paths[Flat File Source Output1]"
-          TopLeft="771.533323344589,123.599998778105">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-12.9999996572732,117.399997630715"
-              Start="0,0"
-              End="-12.9999996572732,109.899997630715">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,54.6999988153577" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,54.6999988153577"
-                    Point2="0,58.6999988153577"
-                    Point3="-4,58.6999988153577" />
-                  <mssgle:LineSegment
-                    End="-8.99999965727318,58.6999988153577" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-8.99999965727318,58.6999988153577"
-                    Point2="-12.9999996572732,58.6999988153577"
-                    Point3="-12.9999996572732,62.6999988153577" />
-                  <mssgle:LineSegment
-                    End="-12.9999996572732,109.899997630715" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Plataformas">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task Tendencias Plataformas\OLE DB Destination Tendencia">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
