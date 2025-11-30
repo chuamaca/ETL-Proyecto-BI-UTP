@@ -1,0 +1,70 @@
+# SSIS/Visual Studio Build Files
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.aps
+*.ncb
+*.sdf
+*.opensdf
+*.VC.db
+
+# SSIS Project Files
+*.ispac
+*.dtproj.user
+*.dtproj.bak
+
+# Visual Studio Cache/Options Directory
+.vs/
+.vscode/
+
+# Local user settings
+*.local
+*.user.props
+*.user.xml
+
+# Temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# OS-specific
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+*.cab
+
+# Debug/Release output
+Debug/
+Release/
+
+# Package cache
+packages/
+!.nuget/packages/
+
+# Node modules (if applicable)
+node_modules/
+npm-debug.log
+
+# IDE
+.idea/
+*.swp
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+
+# Connection strings and sensitive data
+*.config
+!app.config
+!web.config
+
+# Logs
+logs/
+*.log

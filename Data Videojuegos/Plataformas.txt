@@ -1,0 +1,5 @@
+Plataforma;UsuariosActivos;Region;Crecimiento
+PS5;40;Global;12
+Switch;120;Global;7
+Xbox Series;25;Global;5
+PC;90;Global;4
